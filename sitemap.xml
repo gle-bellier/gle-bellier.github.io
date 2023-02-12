@@ -3,16 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gle-bellier.github.io/</loc>
-    <lastmod>2022-09-19T16:01:15+02:00</lastmod>
+    <lastmod>2022-10-12T20:39:29+02:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://gle-bellier.github.io/posts/perf-diffusion/</loc>
+    <lastmod>2022-10-12T20:39:29+02:00</lastmod>
+  </url><url>
+    <loc>https://gle-bellier.github.io/posts/</loc>
+    <lastmod>2022-10-12T20:39:29+02:00</lastmod>
   </url><url>
     <loc>https://gle-bellier.github.io/aboutme/</loc>
     <lastmod>2022-09-19T16:01:15+02:00</lastmod>
   </url><url>
     <loc>https://gle-bellier.github.io/posts/my-first-post/</loc>
-    <lastmod>2022-09-19T16:01:15+02:00</lastmod>
-  </url><url>
-    <loc>https://gle-bellier.github.io/posts/</loc>
     <lastmod>2022-09-19T16:01:15+02:00</lastmod>
   </url><url>
     <loc>https://gle-bellier.github.io/articles/</loc>
