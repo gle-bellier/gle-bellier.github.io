@@ -26,7 +26,29 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     
     <link rel="stylesheet" href="/sass/main.min.6bf4644448a03e1c099114a6dee4bec309ddebb451d58582e52c64f41a6665b3.css">
-    
+    <style>
+  :root {
+      --article-font-family: "IBM Plex Sans", var(--base-font-family);
+      --sys-font-family: "IBM Plex Sans"; 
+  }
+</style>
+
+
+<script>
+  (function () {
+      const customArticleFont = document.createElement('link');
+      customArticleFont.href = "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;1,100&display=swap";
+      customArticleFont.type = "text/css";
+      customArticleFont.rel = "stylesheet";
+      document.head.appendChild(customArticleFont);
+
+      const customBaseFont = document.createElement('link');
+      customBaseFont.href = "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;1,100&display=swap";
+      customBaseFont.type = "text/css";
+      customBaseFont.rel = "stylesheet";
+      document.head.appendChild(customBaseFont);
+  }());
+</script>
 </head>
 <nav class="navbar">
     <div class="container">
