@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Le Bellier Georges</title>
+    <link>https://gle-bellier.github.io/posts/</link>
+    <description>Recent content in Posts on Le Bellier Georges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 16:01:15 +0200</lastBuildDate><atom:link href="https://gle-bellier.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Reading List] Summer</title>
+      <link>https://gle-bellier.github.io/posts/readinglist/</link>
+      <pubDate>Fri, 19 Jul 2024 16:01:15 +0200</pubDate>
+      
+      <guid>https://gle-bellier.github.io/posts/readinglist/</guid>
+      <description>As summer approaches, I am pleased to share my reading list for the season. This compilation is designed to encompass papers that are closely aligned with my research interests, while also including a diverse range of topics (curiosity). If you have any papers you’ve enjoyed—old or new—please share them with me on Twitter or via email. Happy reading!
+Self-Supervised Learning with Lie Symmetries for Partial Differential Equations, Mialon et al Link</description>
+    </item>
+    
+  </channel>
+</rss>

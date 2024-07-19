@@ -4,6 +4,87 @@
     <link>https://gle-bellier.github.io/</link>
     <description>Recent content on Le Bellier Georges</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://gle-bellier.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jul 2024 16:01:15 +0200</lastBuildDate><atom:link href="https://gle-bellier.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+    <title>[Reading List] Summer</title>
+    <link>https://gle-bellier.github.io/posts/readinglist/</link>
+    <pubDate>Fri, 19 Jul 2024 16:01:15 +0200</pubDate>
+    
+    <guid>https://gle-bellier.github.io/posts/readinglist/</guid>
+    <description>
+        &lt;p&gt;As summer approaches, I am pleased to share my reading list for the season. This compilation is designed to encompass papers that are closely aligned with my research interests, while also including a diverse range of topics (curiosity). If you have any papers you’ve enjoyed—old or new—please share them with me on &lt;a href=&#34;https://twitter.com/_lebellig&#34;&gt;Twitter&lt;/a&gt; or via email. Happy reading!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Self-Supervised Learning with Lie Symmetries for Partial Differential Equations&lt;/strong&gt;, Mialon et al &lt;a href=&#34;https://arxiv.org/pdf/2307.05432&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;EM Distillation for One-step Diffusion Models&lt;/strong&gt;, Xie et al. &lt;a href=&#34;https://arxiv.org/abs/2405.16852&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;OmniSat: Self-Supervised Modality Fusion for Earth Observation&lt;/strong&gt;, Astruc et al. &lt;a href=&#34;https://arxiv.org/abs/2404.08351&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cross-sensor self-supervised training and alignment for remote sensing&lt;/strong&gt;, Marsocci et al. &lt;a href=&#34;https://arxiv.org/abs/2405.09922&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Open-Canopy: A Country-Scale Benchmark for Canopy Height Estimation at Very High Resolution&lt;/strong&gt;, Fogel et al. &lt;a href=&#34;https://arxiv.org/pdf/2407.09392&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Gromov-Wasserstein Averaging of Kernel and Distance Matrices&lt;/strong&gt;, Peyre et al.  &lt;a href=&#34;http://proceedings.mlr.press/v48/peyre16.pdf&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Context-Guided Diffusion for Out-of-Distribution Molecular and Protein Design&lt;/strong&gt;, Klarner et al. &lt;a href=&#34;https://arxiv.org/pdf/2407.11942&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Neural Optimal Transport with Lagrangian Costs&lt;/strong&gt;, Liang-Chieh Chen et al. &lt;a href=&#34;https://arxiv.org/abs/2406.00288&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Space-Time Continuous PDE Forecasting using Equivariant Neural Fields&lt;/strong&gt;, Knigge et al. &lt;a href=&#34;https://arxiv.org/pdf/2406.06660&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Foundation Models for Generalist Geospatial Artificial Intelligence&lt;/strong&gt;, Jakubik et al. &lt;a href=&#34;https://arxiv.org/pdf/2310.18660&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;STONE: Self-Supervised Tonality Estimator&lt;/strong&gt;, Kong et al. &lt;a href=&#34;https://arxiv.org/pdf/2407.07408&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Mathematics of Emergence&lt;/strong&gt;, Cucker et al. &lt;a href=&#34;https://home.ttic.edu/~smale/papers/math-of-emergence.pdf&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Generative Data Assimilation of Sparse Weather Station Observations at Kilometer Scales&lt;/strong&gt;, Manshausen et al. &lt;a href=&#34;https://arxiv.org/pdf/2406.16947&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Flow Map Matching&lt;/strong&gt;, Boffi et al. &lt;a href=&#34;https://arxiv.org/pdf/2406.07507&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Learning Diffusion at Lightspeed&lt;/strong&gt;, Terpin et al. &lt;a href=&#34;https://arxiv.org/pdf/2406.12616&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;3D Gaussian Splatting for Real-Time Radiance Field Rendering&lt;/strong&gt;, Kerbl et al. &lt;a href=&#34;https://arxiv.org/pdf/2308.04079&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Simplified and Generalized Masked Diffusion for Discrete Data&lt;/strong&gt;, Shi et al. &lt;a href=&#34;https://arxiv.org/pdf/2406.04329&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Chameleon: Mixed-Modal Early-Fusion Foundation Models&lt;/strong&gt;, Chameleon Team. &lt;a href=&#34;https://arxiv.org/pdf/2405.09818&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Estimating Canopy Height at Scale&lt;/strong&gt;, Pauls et al. &lt;a href=&#34;https://arxiv.org/pdf/2406.01076&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Generating and Imputing Tabular Data via Diffusion and Flow-based Gradient-Boosted Trees&lt;/strong&gt;, Jolicoeur-Martineau et al. &lt;a href=&#34;http://localhost:1313/posts/readinglist/&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Neural Operators with Localized Integral and Differential Kernels&lt;/strong&gt;, Liu-Schiaffini et al. &lt;a href=&#34;https://arxiv.org/pdf/2402.16845&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;D-Flow: Differentiating through Flows for Controlled Generation&lt;/strong&gt;, Ben-Hamu et al. &lt;a href=&#34;https://arxiv.org/pdf/2402.14017&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+    </description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="dark">
+    <title>[Tutorial] Conditional Flow Matching | Le Bellier Georges</title>
+
+    
+    
+    
+    <meta property="og:site_name" content="Le Bellier Georges" />
+    <meta property="og:title" content="[Tutorial] Conditional Flow Matching | Le Bellier Georges"/>
+    <meta itemprop="name" content="[Tutorial] Conditional Flow Matching | Le Bellier Georges" />
+    <meta name="twitter:title" content="[Tutorial] Conditional Flow Matching | Le Bellier Georges" />
+    <meta name="application-name" content="[Tutorial] Conditional Flow Matching | Le Bellier Georges" /><meta name="twitter:card" content="summary"/>
+
+    <meta name="description" content="Personal website and notes about ML research." />
+    <meta name="twitter:description" content="Personal website and notes about ML research."/>
+    <meta itemprop="description" content="Personal website and notes about ML research."/>
+    <meta property="og:description" content="Personal website and notes about ML research." />
+
+    
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <link rel="stylesheet" href="/sass/main.min.0adaebd79f8344d37f6d07a39a680890bc7a7f0fb58206967a3c5c56f6ef828c.css">
+    <style>
+  :root {
+    --article-font-family: "Noto Sans", var(--base-font-family);
+    --sys-font-family: "Noto Sans";
+     
+  }
+</style>
+
+
+<script>
+  (function () {
+    const customArticleFont = document.createElement('link');
+    customArticleFont.href = "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap";
+    customArticleFont.type = "text/css";
+    customArticleFont.rel = "stylesheet";
+    document.head.appendChild(customArticleFont);
+
+    const customBaseFont = document.createElement('link');
+    customBaseFont.href = "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap";
+    customBaseFont.type = "text/css";
+    customBaseFont.rel = "stylesheet";
+    document.head.appendChild(customBaseFont);
+  }());
+</script>
+</head>
+    
+    <script>
+        (function() {
+            const colorSchemeKey = 'ThemeColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'ThemeColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.userColorScheme = 'dark';
+        } else {
+            document.documentElement.dataset.userColorScheme = 'light';
+        }
+    })();
+</script>
+
+
+    <body class="dark">
+        <nav class="navbar">
+    <div class="container">
+        <div class="flex">
+            <div>
+                <a class="brand" href="/">
+                    
+                    <span class="emoji">
+                        🛰
+                    </span>
+                    
+                    
+                    Le Bellier Georges
+                    </a>
+            </div>
+            <div class="flex">
+                
+                <a href="/aboutme/">About Me</a>
+                
+                <a href="/articles/">Articles</a>
+                
+                
+                    <button id="dark-mode-button">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M30.312.776C32 19 20 32 .776 30.312c8.199 7.717 21.091 7.588 29.107-.429C37.9 21.867 38.03 8.975 30.312.776z"/><path d="M30.705 15.915a1.163 1.163 0 1 0 1.643 1.641a1.163 1.163 0 0 0-1.643-1.641zm-16.022 14.38a1.74 1.74 0 0 0 0 2.465a1.742 1.742 0 1 0 0-2.465zm13.968-2.147a2.904 2.904 0 0 1-4.108 0a2.902 2.902 0 0 1 0-4.107a2.902 2.902 0 0 1 4.108 0a2.902 2.902 0 0 1 0 4.107z" fill="#FFCC4D"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"/><circle fill="#FFD983" cx="18" cy="18" r="10"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    </button>
+                
+            </div>
+            </div>
+    </div>
+</nav>
+
+        <main>
+            
+<div class="container">
+    <article>
+        <header class="article-header">
+            <div class="thumb">
+                <div>
+                    <h1>[Tutorial] Conditional Flow Matching</h1>
+                    <div class="post-meta">
+                        <div>
+                            
+                            
+                              
+                            
+                            By Le Bellier Georges | <time>September 19, 2022</time>
+                            | 2 minutes
+                        </div>
+                        <div class="tags">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </article>
+
+    <div class="article-post">
+    <p>This notebook centers around the <strong>Flow Matching for Generative Modeling</strong> article [1] and proposes an implementation of <em>Flow Matching</em> in the case of <em>Optimal Transport conditional Vector Fields</em>. The implementation proposed in [2] was consulted and it inspired the use of the <em>Zuko</em> [3] package for ODE solving and sampling. Moreover, this notebook adopts the notations of the original article and thus the numbers of the equations are the same as in the paper.</p>
+<h2 id="introduction">
+    <a href="#introduction" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    Introduction
+</h2>
+<p>The article [1] reminds the reader with the following notations:</p>
+<ul>
+<li>$\mathbb{R}^d$ denote the adata space with data points $x = (x^1, &hellip;, x^d) \in \mathbb{R}^d$.</li>
+<li>$v: [0, 1] \times \mathbb{R}^d \rightarrow \mathbb{R}^d$ is the <em>time-dependant vector field</em>.</li>
+<li>$\phi: [0, 1] \times \mathbb{R}^d \rightarrow \mathbb{R}^d$ is a <em>flow</em>. A flow is associated to a vector field $v_t$ thanks to the following equations:</li>
+</ul>
+<!-- $$
+\begin{cases}
+  \frac{d}{dt}\phi_t(x) = v_t(\phi_t(x))\\ 
+  \phi_0(x) = x \tag{1, 2}\\
+\end{cases} -->
+<p>$$
+\frac{d}{dt}\phi_t(x) = v_t(\phi_t(x)),<br>
+\phi_0(x) = x\
+$$
+The main idea is then to use a neural network to model the vector field $v_t$, which implies that $\phi_t$ will also be a parametric model and we call it a  <em>Continuous Normalizing Flow</em> (CNF). In the context of generative modeling, the CNF allows us to transform a simple prior distribution (<em>e.g.</em> gaussian) $p_0$ into a more complex one $p_1$ (which we want close to the data distribution $q$ we need to model) by using the <em>push-forward equation</em>:</p>
+<p>$$p_t = \lbrack\phi_t\rbrack_*p_0$$
+Where:
+$$\forall x \in \mathbb{R}^2, \lbrack\phi_t\rbrack_*p_0(x) = p_0(\phi^{-1}(x))\det\left\lbrack\frac{\partial\phi_t^{-1}}{\partial x}(x)\right\rbrack$$</p>
+<p>Thus the <em>Flow Matching</em> aims at learning the true vector field $u_t$:</p>
+<p>$$L_{FM}(\theta) = \mathbb{E}_{t, p_t(x)} \lVert v_t(x) - u_t(x) \rVert^2$$</p>
+<p>However this objectif is intractable, so the article [1] introduces the <em>Conditional Flow Matching</em> (CFM) objective where $x_1 \sim q(x_1) \approx p_1(x_1)$ :</p>
+<p>$$
+L_{CFM}(\theta) = \mathbb{E}_{t, q(x_1), p_t(x|x_1)} \lVert v_t(x) - u_t(x|x_1) \rVert^2 \tag{9}
+$$</p>
+<p>This objective can be declined in several ways depending on the choice of the form of the conditional probability paths. In this notebook we will focus on the case of <em>Optimal Transport conditional Vector Fields</em> and will leave the <em>Diffusion conditional Vector Fields</em> for future works.</p>
+<h2 id="references">
+    <a href="#references" class="anchor">
+        <svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+            </path>
+        </svg>
+    </a>
+    References:
+</h2>
+<p>📄 [1] <strong>Flow Matching for Generative Modeling</strong> by Yaron Lipman, Ricky T. Q. Chen, Heli Ben-Hamu, Maximilian Nickel, Matt Le - <a href="https://arxiv.org/abs/2210.02747">Article</a></p>
+<p>🐍 [2] <strong>Flow Matching in 100 LOC</strong> by François Rozet - <a href="https://gist.github.com/francois-rozet/fd6a820e052157f8ac6e2aa39e16c1aa">Implementation</a></p>
+<p>🐍 [3] <strong>Zuko</strong> package - <a href="https://zuko.readthedocs.io/en/stable/index.html">Website</a></p>
+<p>📄 [4] <strong>Score-Based Generative Modeling through Stochastic Differential Equations</strong> by Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, Ben Poole - <a href="https://arxiv.org/abs/2011.13456">Article</a></p>
+
+    </div>
+</div>
+
+<div class="container">
+    
+    <nav class="flex container suggested">
+        
+        
+        
+    </nav>
+    
+</div>
+ 
+<div class="container">
+    
+</div>
+
+</main>
+
+
+        </main>
+        <footer class="footer flex">
+    <section class="container">
+        <nav class="footer-links">
+            
+            <a href="/index.xml">RSS</a>
+            
+        </nav>
+
+        
+    </section>
+    <script type="text/javascript">
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+            }
+        };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+    <script defer src="/ts/features.dd8e5b18a6dda91367e396fd8dc9b9f83a1993065f709a53e056e0f2e9096ea1.js" 
+    data-enable-footnotes="true"
+    ></script>
+</footer>
+
+    </body>
+</html>
